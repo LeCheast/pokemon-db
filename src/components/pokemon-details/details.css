@@ -1,0 +1,39 @@
+.center-table-elements {
+    text-align: center;
+}
+
+#mobileTable {
+    display: none;
+}
+
+#moves {
+    column-count: 4;
+    margin-bottom: 20px;
+}
+
+#mobileTable,
+#tableLarge {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 575px) {
+    #moves {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #mobileTable {
+        display: unset;
+    }
+    
+    #tableLarge {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #moves {
+        column-count: 2;
+    }
+}
